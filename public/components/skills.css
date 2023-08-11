@@ -1,0 +1,47 @@
+
+.habilidade {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.parte-habilidades-linha p {
+  margin: 0.5rem 0;
+  font-weight: bold;
+}
+
+.bar {
+  height: 12px;
+  background-color: #e0e0e0;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+  width: 40%;
+}
+
+.progress-bar {
+  height: 100%;
+  border-radius: 6px;
+  background-color: #1e54e9;
+}
+
+.parte-experiencia {
+  margin-bottom: 2rem;
+}
+
+.experiencia {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.skills-container {
+  display: flex;
+}
+
+.skills-column {
+  flex: 1;
+  padding: 0 1rem;
+}
