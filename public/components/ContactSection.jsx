@@ -48,7 +48,7 @@ const ContactLinkCard = ({ githubLink, linkedinLink }) => {
         <div className="segundo-link">
           <a href={linkedinLink} target="_blank" rel="noopener noreferrer">
             <img
-              src="img/180-1804713_linkedin-icon-for-resume.png"
+              src="img/linkedinIcon.png"
               alt="LinkedIn"
               width="50px"
             />

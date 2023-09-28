@@ -1,8 +1,8 @@
 import "./main.css";
 import { Skill } from "./components/Skills";
 import { ExperienceCard } from "./components/ExperienceCard";
-import PortfolioSection from './components/Portfolio';
-import ContactSection from './components/ContactSection';
+import PortfolioSection from "./components/Portfolio";
+import ContactSection from "./components/ContactSection";
 
 const Main = () => {
   return (
@@ -13,10 +13,12 @@ const Main = () => {
             <h1>Sobre</h1>
             <span className="reta"></span>
             <p>
-              Eu tenho 18 anos e moro em Maceió. Em 2021, comecei a estudar
-              programação porque sempre tive curiosidade sobre como funcionam os
-              programas e sites. Foi nesse momento que percebi que queria me
-              tornar um programador.
+              🚀 Forte interesse em desenvolvimento web e sou apaixonado por
+              tecnologias como React.js, Node.js.
+            </p>
+            <p>
+              👨‍💻Sempre buscando formas de melhorar minhas habilidades e
+              aplicá-las em projetos criativos e desafiadores.
             </p>
           </div>
         </div>
@@ -26,22 +28,23 @@ const Main = () => {
             <div className="reta"></div>
             <div className="skills-container">
               <div className="skills-column">
-                <Skill name="JavaScript" progress={100} />
-                <Skill name="Scrum" progress={100} />
-                <Skill name="NodeJs" progress={95} />
-                <Skill name="ReactJs" progress={95} />
-                <Skill name="Firebase" progress={95} />
-                <Skill name="Git" progress={95} />
-                <Skill name="GitHub" progress={95} />
-                <Skill name="Inglês" progress={75} />
+                <Skill name="JavaScript" image="./img/javascriptIcon.png" />
+                <Skill name="Scrum" image="./img/scrumIcon.png" />
+                <Skill name="NodeJs" image="./img/nodejsIcon.png" />
+                <Skill name="ReactJs" image="./img/reactIcon.png" />
+                <Skill name="Java" image="./img/javaIcon.png" />
+                <Skill name="Firebase" image={"./img/firebaseIcon.png"} />
+                <Skill name="Git" image={"./img/gitIcon.png"} />
+                <Skill name="GitHub" image={"./img/githubIcon.png"} />
+                <Skill name="Inglês" image={"./img/yesidiomaIcon.png"} />
               </div>
               <div className="skills-column">
-                <Skill name="HTML" progress={100} />
-                <Skill name="CSS" progress={100} />
-                <Skill name="Kanban" progress={93} />
-                <Skill name="Express.js" progress={85} />
-                <Skill name="Python" progress={70} />
-                <Skill name="MySql" progress={70} />
+                <Skill name="HTML" image={"./img/htmlIcon.png"} />
+                <Skill name="CSS" image={"./img/cssIcon.png"} />
+                <Skill name="Kanban" image={"./img/kanbanIcon.png"} />
+                <Skill name="Express.js" image={"./img/expressjsIcon.png"} />
+                <Skill name="Python" image={"./img/pythonIcon.png"} />
+                <Skill name="MySql" image={"./img/mysqlIcon.png"} />
               </div>
             </div>
           </div>
@@ -64,24 +67,25 @@ const Main = () => {
         </div>
 
         <ExperienceCard
-          title="Escolaridade"
+          title="🎓 Escolaridade"
           currentStatus="Ensino Superior - EM ANDAMENTO"
-          description="Estudante de Ciências da Computação"
+          description="Cursando Ciências da Computação na UNINASSAU."
           year="2023"
         />
         <ExperienceCard
-          title="Escolaridade"
+          title="📚Educaçäo"
           currentStatus="Curso de Inglês - EM ANDAMENTO"
           description="Estudante de inglês"
           year="2019"
         />
         <ExperienceCard
-          title="Trabalhos"
+          title="💼Trabalhos"
           currentStatus="Softcom"
-          description="Suporte na área interna e externa"
+          description="Trabalhei como Suporte Técnico com forte ênfase na resolução de
+              problemas e comunicação."
         />
 
-      <PortfolioSection/>
+        <PortfolioSection />
 
         <ContactSection />
       </main>

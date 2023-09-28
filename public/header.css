@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Titillium+Web&display=swap');
 
 *{
   padding: 0px;
@@ -16,91 +17,15 @@
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.minha-foto {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-right: 1rem;
-}
-
-.nav {
+.nameGroup{
   display: flex;
-  align-items: center;
+  justify-content: flex-start;
 }
 
-.menu {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
+.name, .last-name{
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #fefefe;
 }
 
-.menu a {
-  text-decoration: none;
-  color: #ffffff;
-  font-weight: bold;
-  transition: color 0.3s;
-  font-size: 20px;
-}
-
-.menu a:hover {
-  color: #072169;
-}
-
-.btnMobile {
-  display: none;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-}
-
-.hamburguer {
-  display: block;
-  width: 25px;
-  height: 3px;
-  background-color: #ffffff;
-  position: relative;
-  transition: transform 0.3s;
-}
-
-.btnMobile.active .hamburguer::before,
-.btnMobile.active .hamburguer::after {
-  content: '';
-  display: block;
-  width: 25px;
-  height: 3px;
-  background-color: #ffffff;
-  position: absolute;
-}
-
-.btnMobile.active .hamburguer::before {
-  transform: translateY(-8px) rotate(-45deg);
-}
-
-.btnMobile.active .hamburguer::after {
-  transform: translateY(8px) rotate(45deg);
-}
-
-@media (max-width: 800px) {
-  .menu {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    background-color: #3f51b5;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 1rem;
-    width: 100%;
-    z-index: 1000;
-  }
-
-  .menu.active {
-    display: flex;
-  }
-
-  .btnMobile {
-    display: block;
-  }
-}

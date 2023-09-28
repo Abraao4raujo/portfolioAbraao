@@ -1,11 +1,11 @@
-import './skills.css'
+import "./skills.css";
 
-export const Skill = ({ name, progress }) => {
+export const Skill = ({ name, image }) => {
   return (
-    <div className="parte-habilidades-linha js-scroll">
-      <p>{name}</p>
-      <div className="bar">
-        <div className="progress-bar" style={{ width: `${progress}%` }}></div>
+    <div className="parte-habilidades-linha">
+      <div className="habilidade">
+        {image && <img src={image} alt="imageIcon"></img>}
+        <p>{name}</p>
       </div>
     </div>
   );
