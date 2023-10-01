@@ -69,3 +69,31 @@
   width: 50px;
   height: 50px;
 }
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .coluna {
+    margin-top: 1rem;
+  }
+  
+  .contato-link {
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+  
+  .primeiro-link,
+  .segundo-link {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .coluna {
+    flex: 0;
+    width: 100%;
+  }
+}

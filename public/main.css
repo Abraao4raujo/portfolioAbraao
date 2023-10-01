@@ -1,6 +1,6 @@
 html {
   scroll-behavior: smooth;
-} 
+}
 
 .container-main {
   background-color: #f2f2f2;
@@ -25,4 +25,40 @@ html {
 .sobre p {
   font-size: 1.2rem;
   line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+  .container-main {
+    padding: 1rem;
+  }
+
+  .parte-sobre {
+    padding: 1rem;
+  }
+
+  .sobre h1 {
+    font-size: 1.2rem;
+  }
+
+  .sobre p {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container-main {
+    padding: 0.5rem;
+  }
+
+  .parte-sobre {
+    padding: 0.5rem;
+  }
+
+  .sobre h1 {
+    font-size: 1rem;
+  }
+
+  .sobre p {
+    font-size: 1rem;
+  }
 }
