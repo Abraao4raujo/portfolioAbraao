@@ -54,13 +54,13 @@ const Main = () => {
             <div className="reta"></div>
             <div className="skills-container">
               <div className="skills-column">
-                <Skill name="Comunicação" progress={80} />
-                <Skill name="Trabalho em Equipe e Colaboração" progress={95} />
-                <Skill name="Resolução de problemas" progress={85} />
+                <Skill name="Atendimento ao Cliente" />
+                <Skill name="Trabalho em Equipe e Colaboração" />
+                <Skill name="Resolução de problemas" />
               </div>
               <div className="skills-column">
-                <Skill name="Adaptabilidade/Flexibilidade" progress={100} />
-                <Skill name="Atendimento ao Cliente" progress={100} />
+                <Skill name="Flexibilidade" />
+                <Skill name="Comunicação" />
               </div>
             </div>
           </div>

@@ -28,23 +28,30 @@ const Main = () => {
             <div className="reta"></div>
             <div className="skills-container">
               <div className="skills-column">
-                <Skill name="JavaScript" image="./img/javascriptIcon.png" />
-                <Skill name="Scrum" image="./img/scrumIcon.png" />
-                <Skill name="NodeJs" image="./img/nodejsIcon.png" />
-                <Skill name="ReactJs" image="./img/reactIcon.png" />
-                <Skill name="Java" image="./img/javaIcon.png" />
-                <Skill name="Firebase" image={"./img/firebaseIcon.png"} />
-                <Skill name="Git" image={"./img/gitIcon.png"} />
-                <Skill name="GitHub" image={"./img/githubIcon.png"} />
-                <Skill name="Inglês" image={"./img/yesidiomaIcon.png"} />
+                <Skill
+                  name="JavaScript"
+                  image="./img/icon/javascriptIcon.png"
+                />
+                <Skill name="Scrum" image="./img/icon/scrumIcon.png" />
+                <Skill name="NodeJs" image="./img/icon/nodejsIcon.png" />
+                <Skill name="ReactJs" image="./img/icon/reactIcon.png" />
+                <Skill name="TypeScript" image="./img/icon/tsIcon.png" />
+                <Skill name="Java" image="./img/icon/javaIcon.png" />
+                <Skill name="Firebase" image={"./img/icon/firebaseIcon.png"} />
+                <Skill name="Git" image={"./img/icon/gitIcon.png"} />
+                <Skill name="GitHub" image={"./img/icon/githubIcon.png"} />
+                <Skill name="Inglês" image={"./img/icon/yesidiomaIcon.png"} />
               </div>
               <div className="skills-column">
-                <Skill name="HTML" image={"./img/htmlIcon.png"} />
-                <Skill name="CSS" image={"./img/cssIcon.png"} />
-                <Skill name="Kanban" image={"./img/kanbanIcon.png"} />
-                <Skill name="Express.js" image={"./img/expressjsIcon.png"} />
-                <Skill name="Python" image={"./img/pythonIcon.png"} />
-                <Skill name="MySql" image={"./img/mysqlIcon.png"} />
+                <Skill name="HTML" image={"./img/icon/htmlIcon.png"} />
+                <Skill name="CSS" image={"./img/icon/cssIcon.png"} />
+                <Skill name="Kanban" image={"./img/icon/kanbanIcon.png"} />
+                <Skill
+                  name="Express.js"
+                  image={"./img/icon/expressjsIcon.png"}
+                />
+                <Skill name="Python" image={"./img/icon/pythonIcon.png"} />
+                <Skill name="MySql" image={"./img/icon/mysqlIcon.png"} />
               </div>
             </div>
           </div>

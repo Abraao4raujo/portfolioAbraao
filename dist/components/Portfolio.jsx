@@ -1,46 +1,62 @@
+import { useState } from "react";
 import "./portfolioSection.css";
+import { useEffect } from "react";
+import { BsLink45Deg } from "react-icons/bs";
+
+const PortfolioItem = ({ name, link, desc }) => {
+  return (
+    <div className="containerPortfolio">
+      <a href={link} target="_blank" rel="noopener noreferrer">
+        <h4>
+          {name}
+          <BsLink45Deg />
+        </h4>
+        <p>{desc}</p>
+      </a>
+    </div>
+  );
+};
 
 const PortfolioSection = () => {
+  const [githubData, setGithubData] = useState(null);
+
+  useEffect(() => {
+    const getGithubAPI = () => {
+      fetch("https://api.github.com/users/Abraao4raujo/repos")
+        .then(async (res) => {
+          if (!res.ok) {
+            throw new Error(res.status);
+          }
+          const data = await res.json();
+          setGithubData(data);
+          console.log(data);
+        })
+        .catch((e) => console.log(e));
+    };
+
+    getGithubAPI();
+  }, []);
+
   return (
     <div className="portfolio">
       <div className="parte-portfolio">
         <h1>Portfólio</h1>
         <span className="reta"></span>
-        <div className="imagem-container">
-          <PortfolioItem
-            link="https://lista-jogos-roan.vercel.app/"
-            imgSrc="img/listaJogos.png"
-            alt="Lista de Jogos"
-          />
-          <PortfolioItem
-            link="https://abraao4raujo.github.io/projeto-form"
-            imgSrc="img/form.png"
-            alt="Form Project"
-          />
-          <PortfolioItem
-            link="/"
-            imgSrc="img/syncstream.png"
-            alt="Projeto ainda em desenvolvimento"
-            desc="Projeto ainda em desenvolvimento..."
-          />
-          <PortfolioItem
-            link="https://abraao4raujo.github.io/WebSite-Acai"
-            imgSrc="img/projetoacai.png"
-            alt="Projeto Açai Website"
-          />
+        <div className="grid-container">
+          {githubData ? (
+            githubData.map((item) => (
+              <PortfolioItem
+                key={item.id}
+                name={item.name}
+                link={item.homepage || item.html_url}
+                desc={item.description}
+              />
+            ))
+          ) : (
+            <p>Loading Repository...</p>
+          )}
         </div>
       </div>
-    </div>
-  );
-};
-
-const PortfolioItem = ({ link, imgSrc, alt, desc }) => {
-  return (
-    <div className="imagem">
-      <a href={link} target="_blank" rel="noopener noreferrer">
-        <img src={imgSrc} alt={alt} />
-      </a>
-      <p>{desc}</p>
     </div>
   );
 };
