@@ -12,6 +12,7 @@ const ContactSection = () => {
           <ContactInfoCard title="Email:" info="a68816619@gmail.com" />
           <ContactInfoCard title="Telefone" info="+55 82 999705098" />
           <ContactLinkCard
+            whatsappLink="https://api.whatsapp.com/send?phone=82999705098&text=Olá+Abraão%21+Eu+Estou+no+seu+site+e+gostaria+de+saber+mais+informações+sobre+seu+trabalho!"
             githubLink="https://github.com/Abraao4raujo"
             linkedinLink="https://www.linkedin.com/in/abraao4raujo/"
           />
