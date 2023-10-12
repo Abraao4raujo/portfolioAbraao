@@ -4,15 +4,19 @@ h1 {
   color: #333333;
 }
 
-.containerPortfolio h4 {
+.containerPortfolio h4,
+a {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.2rem;
   margin-bottom: 10px;
+  display: inline;
 }
 
 .containerPortfolio a {
   text-decoration: none;
-  color: #333;
+  color: #2704c2;
+  font-size: 1.5rem;
+  float: right;
 }
 
 .containerPortfolio p {
@@ -44,7 +48,7 @@ h1 {
   transform: scale(1.01);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 880px) {
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
   }

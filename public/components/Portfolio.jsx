@@ -30,12 +30,12 @@ const PortfolioSection = () => {
         <span className="reta"></span>
         <div className="grid-container">
           {githubData ? (
-            githubData.map((item) => (
+            githubData.map(({ id, name, homepage, html_url, description }) => (
               <PortfolioItem
-                key={item.id}
-                name={item.name}
-                link={item.homepage || item.html_url}
-                desc={item.description}
+                key={id}
+                name={name}
+                link={homepage || html_url}
+                desc={description}
               />
             ))
           ) : (
