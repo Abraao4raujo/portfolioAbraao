@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+.containerBoxMessage {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  justify-content: flex-end;
+  height: calc(100vh - 54.313px);
+  font-family: "Poppins", sans-serif;
+}
+
+.redesSociais {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-left: auto;
+}
+
+.redeGithub,
+.redeLinkedin {
+  width: 150px;
+  border-radius: 10px;
+  justify-content: center;
+  text-align: center;
+  height: 150px;
+  background-color: rgb(38, 40, 43);
+  display: flex;
+  align-items: center;
+}
+
+.linkRede {
+  display: flex;
+  flex-direction: column;
+}
+
+.iconRede {
+  font-size: 3rem;
+  margin: auto;
+  color: #cdd2df;
+}
+
+.infRede {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.7rem;
+}
+
+.subtitulo {
+  display: flex;
+  justify-content: center;
+}
+
+.messageBox {
+  margin: auto;
+  width: 375px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.nome,
+.email,
+.caixaMensagem,
+.enviar {
+  display: flex;
+  flex-direction: column;
+  height: 3rem;
+  margin-right: 30px;
+  border-radius: 10px;
+  margin-left: 30px;
+  margin-bottom: 15px;
+  background-color: #262626;
+  border: 0px;
+  color: #fff;
+  padding: 5px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
+.enviar {
+  background-color: #263cc9;
+  font-size: 0.9rem;
+  justify-content: space-evenly;
+  cursor: pointer;
+  width: 50%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.inputBox {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.caixaMensagem {
+  height: 9rem;
+  resize: none;
+}
+
+@media screen and (max-width: 800px) {
+  .iconRede {
+    font-size: 2.5rem;
+  }
+
+  .enviar {
+    font-size: 0.8rem;
+  }
+
+  .header-container {
+    font-size: 0.9rem;
+  }
+
+  .container-project p {
+    font-size: 0.8rem;
+  }
+
+  .containerBoxMessage {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .redesSociais {
+    flex-direction: row;
+    margin: auto;
+  }
+
+  .redeGithub,
+  .redeLinkedin {
+    width: 150px;
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+    height: 150px;
+    background: none;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.email::-webkit-input-placeholder,
+.nome::-webkit-input-placeholder,
+.caixaMensagem::-webkit-input-placeholder {
+  color: #cdd2df;
+  opacity: 50%;
+}
+.caixaMensagem::-moz-placeholder,
+.email::-moz-placeholder,
+.nome::-moz-placeholder {
+  color: #cdd2df;
+}
