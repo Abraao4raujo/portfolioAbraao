@@ -1,5 +1,6 @@
 import { AiFillLinkedin, AiFillGithub, AiOutlineMessage } from "react-icons/ai";
 import { BiCodeAlt } from "react-icons/bi";
+import { Link } from "react-router-dom";
 const Sobre = () => {
   return (
     <>
@@ -21,9 +22,9 @@ const Sobre = () => {
             Apaixonado pela arte de criar soluções através do código.
           </p>
           <button className="btnContato">
-            <a href="contato" className="linkContato">
+            <Link to="contato" className="linkContato">
               Fale comigo <AiOutlineMessage className="icons" />
-            </a>
+            </Link>
           </button>
         </div>
       </div>
