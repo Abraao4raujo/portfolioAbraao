@@ -5,12 +5,10 @@ const ContainerLanguage = ({ languages }) => {
       <div className="grid">
         <ul className="listLanguage">
           {languages.map(({ nome, img }) => (
-            <>
-              <li key={nome}>
-                {img}
-                <span>{nome}</span>
-              </li>
-            </>
+            <li key={nome}>
+              {img}
+              <span>{nome}</span>
+            </li>
           ))}
         </ul>
       </div>

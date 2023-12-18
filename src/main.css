@@ -39,7 +39,8 @@ li {
   column-gap: 2rem;
 }
 
-.navList a {
+.navList a,
+.icon {
   color: #cdd2df;
   text-decoration: none;
 }

@@ -10,6 +10,30 @@ import { BsArchive, BsLightbulb } from "react-icons/bs";
 import "./main.css";
 
 const App = () => {
+  function clickLink(event) {
+    tirarCor();
+    colocarCor(event);
+    event.preventDefault();
+  }
+
+  function colocarCor(event) {
+    event.target.style.color = "#263cc9";
+  }
+
+  function tirarCor() {
+    const links = document.querySelectorAll(".linkTo");
+    const svg = document.querySelectorAll(".icon");
+
+    links.forEach((element) => {
+      element.children[0].style.color = "#cdd2df";
+    });
+
+    svg.forEach((element) => {
+      element.children[0].style.color = "#cdd2df";
+      element.style.color = "#cdd2df";
+    });
+  }
+
   return (
     <div className="app">
       <BrowserRouter>
@@ -18,34 +42,32 @@ const App = () => {
             <span className="name">&lt;AbraãoAraujo/&gt;</span>
           </Link>
           <ul className="lista-menu">
-            <li className="linkTo">
-              <Link to="/">
-                Sobre
-              </Link>
+            <li className="linkTo" onClick={clickLink}>
+              <Link to="/">Sobre</Link>
             </li>
 
-            <li className="linkTo">
+            <li className="linkTo" onClick={clickLink}>
               <Link to="/habilidades">
                 <BsLightbulb className="icon" />
                 Habilidades
               </Link>
             </li>
 
-            <li className="linkTo">
+            <li className="linkTo" onClick={clickLink}>
               <Link to="/projetos">
                 <BsArchive className="icon" />
                 Projetos
               </Link>
             </li>
 
-            <li className="linkTo">
+            <li className="linkTo" onClick={clickLink}>
               <Link to="/trabalhos">
                 <MdWorkOutline className="icon" />
                 Trabalhos
               </Link>
             </li>
 
-            <li className="linkTo">
+            <li className="linkTo" onClick={clickLink}>
               <Link to="/contato">
                 <AiOutlineMessage className="icon" />
                 Contato
