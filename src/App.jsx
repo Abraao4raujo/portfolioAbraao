@@ -5,7 +5,7 @@ import Trabalhos from "./pages/Trabalhos";
 import Contato from "./pages/Contato";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import { MdWorkOutline } from "react-icons/md";
-import { AiOutlineMessage, AiOutlineMenu } from "react-icons/ai";
+import { AiOutlineMessage } from "react-icons/ai";
 import { BsArchive, BsLightbulb } from "react-icons/bs";
 import "./main.css";
 
@@ -19,7 +19,7 @@ const App = () => {
           </Link>
           <ul className="lista-menu">
             <li className="linkTo">
-              <Link to="/" style={{ color: "#263CC9" }}>
+              <Link to="/">
                 Sobre
               </Link>
             </li>

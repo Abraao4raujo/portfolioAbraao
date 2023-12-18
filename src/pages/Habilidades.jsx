@@ -10,7 +10,7 @@ import {
   BiLogoFirebase,
   BiLogoGithub,
 } from "react-icons/bi";
-import { SiMysql } from "react-icons/si";
+import { SiMysql, SiMongodb, SiFigma, SiDocker } from "react-icons/si";
 import { DiScrum } from "react-icons/di";
 import { BsKanbanFill, BsGit } from "react-icons/bs";
 
@@ -22,19 +22,21 @@ const Skill = () => {
         <ContainerLanguage
           languages={[
             { nome: "JavaScript", img: <BiLogoJavascript /> },
-            { nome: "ReactJs", img: <BiLogoReact /> },
-            { nome: "HTML5", img: <BiLogoHtml5 /> },
-            { nome: "CSS", img: <BiLogoCss3 /> },
             { nome: "NodeJs", img: <BiLogoNodejs /> },
+            { nome: "ReactJs", img: <BiLogoReact /> },
+            { nome: "Docker", img: <SiDocker />},
             { nome: "Java", img: <BiLogoJava /> },
             { nome: "Python", img: <BiLogoPython /> },
-            { nome: "ExpressJs", img: <BiLogoJavascript /> },
+            { nome: "HTML5", img: <BiLogoHtml5 /> },
+            { nome: "CSS", img: <BiLogoCss3 /> },
             { nome: "Firebase", img: <BiLogoFirebase /> },
             { nome: "MySQL", img: <SiMysql /> },
+            { nome: "MongoDB", img: <SiMongodb />},
             { nome: "Scrum", img: <DiScrum /> },
-            { nome: "KANBAN", img: <BsKanbanFill /> },
+            { nome: "Kanban", img: <BsKanbanFill /> },
             { nome: "Git", img: <BsGit /> },
             { nome: "Github", img: <BiLogoGithub /> },
+            { nome: "Figma", img: <SiFigma />},
           ]}
         />
       </div>

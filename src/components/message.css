@@ -150,6 +150,7 @@ form {
   color: #cdd2df;
   opacity: 50%;
 }
+
 .caixaMensagem::-moz-placeholder,
 .email::-moz-placeholder,
 .nome::-moz-placeholder {

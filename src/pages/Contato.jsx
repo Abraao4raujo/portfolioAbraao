@@ -1,4 +1,4 @@
-import Message from "../../public/components/Message";
+import Message from "../components/Message";
 
 const Contact = () => {
   return (
