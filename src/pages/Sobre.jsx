@@ -1,6 +1,7 @@
 import { AiFillLinkedin, AiFillGithub, AiOutlineMessage } from "react-icons/ai";
 import { BiCodeAlt } from "react-icons/bi";
 import { Link } from "react-router-dom";
+
 const Sobre = () => {
   return (
     <>
