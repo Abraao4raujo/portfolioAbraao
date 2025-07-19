@@ -1,35 +1,26 @@
-import { AiFillLinkedin, AiFillGithub, AiOutlineMessage } from "react-icons/ai";
-import { BiCodeAlt } from "react-icons/bi";
-import { Link } from "react-router-dom";
+import { MdOutlineWorkOutline } from "react-icons/md";
+import { CiMail } from "react-icons/ci";
+import "../styles/Sobre.css"
 
 const Sobre = () => {
   return (
-    <>
-      <div className="content-about section">
-        <div className="socialNetwork">
-          <a href="https://www.linkedin.com/in/abraao4raujo/" target="_blank">
-            <AiFillLinkedin style={{ color: "#263CC9" }} />
+    <section className="sobre">
+      <div className="sobre-container">
+        <h2 className="nome">Abraão Araujo</h2>
+        <h3 className="titulo">Desenvolvedor Full Stack</h3>
+        <p className="descricao">Apaixonado pela arte de criar soluções através de códigos.</p>
+        <div className="botoes">
+          <a href="#projetos" className="btn btn-primario">
+            <MdOutlineWorkOutline />
+            <span>Visualizar Projetos</span>
           </a>
-          <a href="https://github.com/Abraao4raujo" target="_blank">
-            <AiFillGithub style={{ color: "#263CC9" }} />
+          <a href="#contato" className="btn btn-secundario">
+            <CiMail />
+            <span>Entre em contato</span>
           </a>
-        </div>
-        <div className="content-text">
-          <h1 className="apresentacao h1">
-            Olá, me chamo Abraão! <BiCodeAlt style={{ color: "#263CC9" }} />
-          </h1>
-          <h3 className="apresentacao h3">Desenvolvedor FullStack</h3>
-          <p className="apresentacao paragrafo">
-            Apaixonado pela arte de criar soluções através do código.
-          </p>
-          <button className="btnContato">
-            <Link to="contato" className="linkContato">
-              Fale comigo <AiOutlineMessage className="icons" />
-            </Link>
-          </button>
         </div>
       </div>
-    </>
+    </section>
   );
 };
 

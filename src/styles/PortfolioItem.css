@@ -1,0 +1,38 @@
+.portfolio-card {
+  background: #f7fafd;
+  border: 1px solid #d9e2ec;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: 0.3s ease-in-out;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+.portfolio-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #2E3A59;
+}
+
+.portfolio-desc {
+  font-size: 0.95rem;
+  color: #4a4a4a;
+  margin-bottom: 15px;
+}
+
+.portfolio-link {
+  text-decoration: none;
+  color: #4A90E2;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.portfolio-link:hover {
+  color: #357ABD;
+}
