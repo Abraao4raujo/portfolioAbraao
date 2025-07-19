@@ -1,33 +1,33 @@
 import PortfolioItem from "../components/PortfolioItem";
+import "../styles/Projetos.css";
 
-const Project = () => {
+const Projetos = () => {
   return (
-    <div>
-      <h2 className="title">Projetos</h2>
-      <div className="containerProjects">
-        <PortfolioItem
-          name="Lista de Jogos"
-          link="https://lista-jogos-roan.vercel.app/"
-          desc="uma plataforma de jogos inovadora com recursos avançados, garantindo segurança com filtragem e autenticação de contas. Adicionei a opção de favoritar jogos, permitindo aos usuários criar listas personalizadas para uma experiência mais eficiente."
-        />
-        <PortfolioItem
-          name="CurriCreator"
-          link="https://curri-creator.vercel.app/"
-          desc="Desenvolvi o CurriCreator para tornar a criação de currículos mais simples. Com recursos como preenchimento fácil e geração instantânea de PDF, a plataforma destaca suas habilidades de maneira eficiente."
-        />
-        <PortfolioItem
-          name="Calculadora para Universitários"
-          link="https://abraao4raujo.github.io/calculadoraAluno/"
-          desc="Desenvolvi esta calculadora acadêmica pensando em facilitar a vida dos estudantes universitários. Com ela, é possível calcular as médias de forma precisa, descobrir a pontuação necessária para aprovação e até mesmo prever o status (aprovado/reprovado)."
-        />
-        <PortfolioItem
-          name="eNewsTech"
-          link="https://abraao4raujo.github.io/eNewsTech/"
-          desc="Desenvolvi o eNewsTech com o objetivo de levar informações precisas e confiáveis sobre os mais variados assuntos. Além disso, o eNewsTech também oferece uma seção especial para eventos que estão acontecendo em Alagoas. E para completar, ainda disponibiliza a temperatura atual em Alagoas."
-        />
+    <section className="projetos">
+      <div className="projetos-container">
+        <h2 className="projetos-titulo">Projetos em Destaque</h2>
+        <p className="projetos-subtitulo">Aplicações que desenvolvi com foco em performance e propósito.</p>
+        <div className="projetos-grid">
+          <PortfolioItem
+            name="Lista de Jogos"
+            link="https://lista-jogos-roan.vercel.app/"
+            desc="Uma plataforma de jogos com autenticação, favoritar jogos e listas personalizadas para usuários."
+          />
+          <PortfolioItem name="CurriCreator" link="https://curri-creator.vercel.app/" desc="Ferramenta simples e prática para gerar currículos em PDF com preenchimento guiado." />
+          <PortfolioItem
+            name="Calculadora Universitária"
+            link="https://abraao4raujo.github.io/calculadoraAluno/"
+            desc="Calculadora de médias acadêmicas com previsão de aprovação e notas necessárias."
+          />
+          <PortfolioItem
+            name="eNewsTech"
+            link="https://abraao4raujo.github.io/eNewsTech/"
+            desc="Portal informativo com notícias, clima e eventos em Alagoas, feito com foco em responsividade."
+          />
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
-export default Project;
+export default Projetos;

@@ -1,0 +1,30 @@
+.projetos {
+  padding: 100px 40px 60px;
+  background: #ffffff;
+  color: #2E3A59;
+  text-align: center;
+}
+
+.projetos-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.projetos-titulo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2E3A59;
+  margin-bottom: 10px;
+}
+
+.projetos-subtitulo {
+  font-size: 1.1rem;
+  color: #4A90E2;
+  margin-bottom: 40px;
+}
+
+.projetos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}

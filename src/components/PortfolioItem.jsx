@@ -1,16 +1,13 @@
-import { BsLink45Deg } from "react-icons/bs";
+import "../styles/PortfolioItem.css";
 
-const PortfolioItem = ({ name, link, desc }) => {
+const PortfolioItem = ({ name, desc, link }) => {
   return (
-    <div className="container-project">
-      <div className="header-container">
-        <h3 className="title-project">{name}</h3>
-        <a href={link} target="_blank">
-          <BsLink45Deg style={{ color: "#fff" }} />
-        </a>
-      </div>
-
-      <p>{desc}</p>
+    <div className="portfolio-card">
+      <h3 className="portfolio-title">{name}</h3>
+      <p className="portfolio-desc">{desc}</p>
+      <a href={link} target="_blank" rel="noopener noreferrer" className="portfolio-link">
+        Ver Projeto
+      </a>
     </div>
   );
 };
