@@ -40,11 +40,14 @@
 .empresa {
   font-size: 1.3rem;
   color: #4a90e2;
-  margin-bottom: 10px;
 }
 
 .descricao {
   font-size: 1rem;
   color: #4a4a4a;
   line-height: 1.5;
+}
+
+.trabalho-item > h4 {
+  margin-bottom: 10px;
 }
